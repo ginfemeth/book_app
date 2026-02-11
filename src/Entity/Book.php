@@ -94,21 +94,6 @@ class Book
         $this->updatedAt = new DateTimeImmutable();
     }
 
-    // #[Groups(['book:read'])]
-    // public function getCoverImageUrl(): ?string
-    // {
-    //     if (!$this->coverImagePath) {
-    //         return null;
-    //     }
-
-    //     // Récupère le domaine depuis la requête HTTP
-    //     $request = Request::createFromGlobals();
-    //     $baseUrl = $request->getSchemeAndHttpHost();
-
-    //     return $baseUrl . $this->coverImagePath;
-    // }
-
-
     // getters/setters
     public function getId(): ?int
     {
